@@ -48,6 +48,26 @@ function writePassword() {
   var includeNumbers = choices[3]
   var includeSpecial = choices[4]
 
+  // we need to use conditionals so that we can create a new array with the updated user choices. This can be done with if statements, and then if true, .concat that char set into the new array
+  if (includeLowercase) {
+    allPossibleChars = allPossibleChars.concat(lowercase);
+  }
+  if (includeUppercase) {
+    allPossibleChars = allPossibleChars.concat(uppercase);
+  }
+  if (includeNumbers) {
+    allPossibleChars = allPossibleChars.concat(numbers);
+  }
+  if (includeSpecial) {
+    allPossibleChars = allPossibleChars.concat(specialChars);
+  }
+  
+  // create a for loop with the new array, that loops for the length of the amount user input, and that will generate a random character from the user chosen char sets each time into our empty string
+  for (var count = 0; count < charAmount; count++) {
+    var randomNum = Math.random();
+    var randomIndex = Math.floor(randomNum * charAmount.length);
+  }
+
 
 
   
