@@ -66,14 +66,10 @@ function writePassword() {
   for (var count = 0; count < charAmount; count++) {
     var randomNum = Math.random();
     var randomIndex = Math.floor(randomNum * charAmount.length);
+
+    pass += allPossibleChars[randomIndex];
   }
 
-
-
-  
-  
-  
-  
   passwordText.value = password;
 
 }
