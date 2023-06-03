@@ -16,25 +16,25 @@ function (userInput) {
   while(true) {
     var amount = parseInt(prompt('Please provide charcter length'));
   if (amount < 8 || amount > 128) {
-    alert('Please enter a character length between 8 and 128!')
+    alert('Please enter a character length between 8 and 128!');
     continue;
   }
-  var includeLowercase = confirm('Click OK to include lowercase letters')
-  var includeUppercase = confirm('Click OK to include uppercase lertters')
-  var includeNumbers = confirm('Click OK to include numbers')
-  var includeSpecial = confirm('Click OK to include special characters')
+  var includeLowercase = confirm('Click OK to include lowercase letters');
+  var includeUppercase = confirm('Click OK to include uppercase lertters');
+  var includeNumbers = confirm('Click OK to include numbers');
+  var includeSpecial = confirm('Click OK to include special characters');
   break;
   }
 
   // return the value of the userInput function into an array
 
-  return [amount, includeLowercase, includeUppercase, includeNumbers, includeSpecial]
+  return [amount, includeLowercase, includeUppercase, includeNumbers, includeSpecial];
 
 }
 
 function writePassword() {
-  
-
+  // we then store that userInput function into a variable called 'choices'. 'userInput' value is replaced by the value of return, which is an array
+  var choices = userInput();
 
   passwordText.value = password;
 
