@@ -14,13 +14,13 @@ function userInput() {
 // we store the return value from the user in variables (amount, includeLowercase)
 
   while(true) {
-    var amount = parseInt(prompt('Please provide charcter length'));
+    var amount = parseInt(prompt('Please provide character length'));
   if (amount < 8 || amount > 128) {
     alert('Please enter a character length between 8 and 128!');
     continue;
   }
   var includeLowercase = confirm('Click OK to include lowercase letters');
-  var includeUppercase = confirm('Click OK to include uppercase lertters');
+  var includeUppercase = confirm('Click OK to include uppercase letters');
   var includeNumbers = confirm('Click OK to include numbers');
   var includeSpecial = confirm('Click OK to include special characters');
 
