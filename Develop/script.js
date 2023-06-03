@@ -23,6 +23,13 @@ function userInput() {
   var includeUppercase = confirm('Click OK to include uppercase lertters');
   var includeNumbers = confirm('Click OK to include numbers');
   var includeSpecial = confirm('Click OK to include special characters');
+
+  // check if none of the options are selected
+  if (!includeLowercase && !includeUppercase && !includeNumbers && !includeSpecial) {
+    alert('Please select at least one option!');
+    continue;
+  }
+  
   break;
   }
 
