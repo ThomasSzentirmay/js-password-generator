@@ -40,6 +40,15 @@ function writePassword() {
   var pass = "";
   var allPossibleChars = [];
 
+  // get all the user choices that are now inside the 'choices' variable, by assigning each item from the choices array to a variable
+
+  var charAmount = choices[0]
+  var includeLowercase = choices[1]
+  var includeUppercase = choices[2]
+  var includeNumbers = choices[3]
+  var includeSpecial = choices[4]
+
+
 
   
   
