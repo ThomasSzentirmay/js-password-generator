@@ -36,6 +36,15 @@ function writePassword() {
   // we then store that userInput function into a variable called 'choices'. 'userInput' value is replaced by the value of return, which is an array
   var choices = userInput();
 
+  // create an empty string within a variable where the randomised characters will be stored. That variable is the one we will be display in the browser box. Also create an empty array so that we can use conditionals to .concat the user's choices into a new array
+  var pass = "";
+  var allPossibleChars = [];
+
+
+  
+  
+  
+  
   passwordText.value = password;
 
 }
