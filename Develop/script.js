@@ -19,6 +19,10 @@ function userInput() {
     alert('Please enter a character length between 8 and 128!');
     continue;
   }
+  if (!amount) {
+    alert('Please enter a character length!')
+    continue;
+  }
   var includeLowercase = confirm('Click OK to include lowercase letters');
   var includeUppercase = confirm('Click OK to include uppercase letters');
   var includeNumbers = confirm('Click OK to include numbers');
