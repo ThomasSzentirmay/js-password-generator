@@ -65,12 +65,12 @@ function writePassword() {
   // create a for loop with the new array, that loops for the length of the amount user input, and that will generate a random character from the user chosen char sets each time into our empty string
   for (var count = 0; count < charAmount; count++) {
     var randomNum = Math.random();
-    var randomIndex = Math.floor(randomNum * charAmount.length);
+    var randomIndex = Math.floor(randomNum * allPossibleChars.length);
 
     pass += allPossibleChars[randomIndex];
   }
 
-  passwordText.value = password;
+  passwordText.value = pass;
 
 }
 
