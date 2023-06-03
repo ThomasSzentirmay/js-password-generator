@@ -12,7 +12,7 @@ Some challenges I faced when building this application were getting mixed up in 
 
 # Deployment
 
-The web application can be accessed via the deployed GitHub pages link:
+The web application can be accessed via the deployed GitHub pages link: https://thomasszentirmay.github.io/js-password-generator/
 
 ![Screenshot 2023-06-02 225435](https://github.com/ThomasSzentirmay/web-dev-portfolio/assets/132217664/917eeec9-4898-4241-bad9-3dd40631ee4d)
 
